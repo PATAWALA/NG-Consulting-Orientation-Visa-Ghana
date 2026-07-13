@@ -28,7 +28,7 @@ export default function CaptureForm() {
             <input type="tel" placeholder="WhatsApp" className="flex-1 p-3 border border-slate-200 rounded-xl focus:outline-ocean" required />
           </div>
           <select className="w-full p-3 border border-slate-200 rounded-xl bg-white focus:outline-ocean" required>
-            <option value="">Niveau d'études actuel</option>
+            <option value="">Niveau d&apos;études actuel</option>
             <option>Bac</option>
             <option>Licence 1</option>
             <option>Licence 2</option>
