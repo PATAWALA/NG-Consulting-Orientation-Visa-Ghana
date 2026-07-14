@@ -22,16 +22,21 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
+          {/* Logo + Nom du cabinet */}
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/logo.jpg"
               alt="NG Consulting"
-              width={120}
+              width={40}
               height={40}
               className="h-8 w-auto"
               priority
             />
+            {/* Séparateur vertical (caché sur mobile, visible sur desktop) */}
+            <span className="hidden lg:block w-px h-6 bg-slate-300" aria-hidden="true" />
+            <span className="hidden lg:block text-lg font-bold text-ocean tracking-tight">
+              NG Consulting
+            </span>
           </Link>
 
           {/* Navigation desktop */}
@@ -49,7 +54,7 @@ export default function Navbar() {
 
           {/* Actions droite */}
           <div className="flex items-center gap-3">
-            {/* Bouton stratégique principal : Réserver ma place */}
+            {/* Bouton stratégique : Réserver ma place */}
             <Link
               href="/evenements"
               className="bg-ocean text-white font-semibold px-4 py-2 text-sm lg:text-base hover:bg-ocean/90 transition shadow"
