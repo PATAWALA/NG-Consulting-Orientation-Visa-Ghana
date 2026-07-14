@@ -15,7 +15,7 @@ export default function Navbar() {
     { href: "/evenements", label: "Événements" },
     { href: "/apropos", label: "À propos" },
     { href: "/contact", label: "Contact" },
-    
+    { href: "/admin", label: "Admin" },
   ];
 
   return (
